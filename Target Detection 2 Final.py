@@ -391,7 +391,7 @@ while True:
             print()
             data.append([round(time.time()-tic,3), X_e_m[0], Y_e_m[0], control_y, control_z , control_yaw , pi_de , ro_de , ya_d , D , Ye , Ze , yaw_e])
             ##if Ye >= -0.4 and Ye <= 0.4 and Ze >= -0.4 and Ze <= 0.4 and D < 3.5:  
-            if -0.04 < Ye < -0.02 and  -0.02 < Ze < 0.02 and 1.6 < D < 1.75 and -6 < yaw_e < 6 and count == 0:
+            if -0.02 < Ye < 0.02 and  -0.02 < Ze < 0.02 and 1.6 < D < 1.75 and -6 < yaw_e < 6 and count == 0:
             #if -0.015 < Ye < 0.015 and  -0.015 < Ze < 0.015 and 1.6 < D < 1.75 and -8 < yaw_e < 8 and count == 0:
                 print('Ye = ',Ye)
                 print('Ze = ',Ze)
